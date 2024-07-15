@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #f3e5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e0a48;
+    padding: 2em;
+}
+
+.header-left {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header-right a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-right a:hover {
+    color: #b39ddb;
+}
+
+.page {
+    display: none;
+    padding: 12px;
+    min-height: calc(90vh - 60px);
+    background-color: #dda0dd;
+}
+
+.page h1 {
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.page h2 {
+    padding: 5px;
+    font-size: 20px;
+    color: #4B1441;
+}
+
+.page h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #4B1441;
+}
+
+.page.active {
+    display: block;
+}
+
+p{
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px;
+    color: #4B1441;
+}
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 1em;
+}
+
+.home-left {
+    max-width: 400px;
+}
+
+.home-left h1, .home-left h2 {
+    font-size: 35px;
+    font-weight: 750;
+    margin: 0;
+}
+
+.home-right {
+    max-width: 35%;
+}
+
+.illustration {
+    width: 95%;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.about-content {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.education-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-left, .education-right {
+    width: 45%;
+}
+
+.education-item, .experience-item {
+    font-family: 'Arial Narrow Bold';
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 10px 0;
+}
+
+.skill-name {
+    width: 20%;
+    color: black;
+}
+
+.skill-bar {
+    width: 70%;
+    background-color: #b39ddb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.skill-percentage {
+    height: 20px;
+    background-color: #5a2247 ;
+}
+
+.skill-percentage-text {
+    color: black;
+    width: 10%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-item {
+    margin: 10px 0;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
